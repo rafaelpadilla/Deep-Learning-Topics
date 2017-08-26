@@ -20,7 +20,7 @@ During my studies, I prepared a set of Jupyter Notebooks with lots of theories a
 * Concepts and Theory
     * Finding analytic solution using calculus and representation with a neuron 
     * Notebook: [Linear Regression_Theory](Linear_Regression_Theory.ipynb) 
-* Solving problems with Linear Regression using Tensorflow, Keras and analytic solution
+* Solving Linear Regression problems using Tensorflow, Keras and analytic solution
     * [Problem 1](Linear_Regression_Prob_1.ipynb)
     * [Problem 2](Linear_Regression_Prob_2.ipynb)
     * [Problem 3](Linear_Regression_Prob_3.ipynb)
