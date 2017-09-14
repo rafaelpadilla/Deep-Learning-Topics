@@ -66,14 +66,19 @@ class KNearestNeighbor(object):
     num_train = self.X_train.shape[0]
     dists = np.zeros((num_test, num_train))
     for i in xrange(num_test):
+    #for i in xrange(5):
       for j in xrange(num_train):
+      #for j in xrange(6):
         #####################################################################
         # TODO:                                                             #
         # Compute the l2 distance between the ith test point and the jth    #
         # training point, and store the result in dists[i, j]. You should   #
         # not use a loop over dimension.                                    #
         #####################################################################
-        pass
+        dists[i,j] = np.sqrt(np.sum(np.power(X[i,:]-self.X_train[j,:],2)))
+        #dists[i,j] = np.sqrt(np.sum((X[i]-self.X_train[j])**2))
+        #dists[i,j] = np.sqrt(np.sum((X[i,:]-self.X_train[j,:])*(X[i,:]-self.X_train[j,:])))
+        #dists[i,j] = np.linalg.norm(self.X_train[j,:]-X[i,:])
         #####################################################################
         #                       END OF YOUR CODE                            #
         #####################################################################
