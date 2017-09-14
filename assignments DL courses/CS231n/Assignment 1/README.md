@@ -21,7 +21,10 @@ Assignment list:
  	* Q3: Implement a Softmax classifier (20 points) **[##Pending!##]**
  	* Q4: Two-Layer Neural Network (25 points) **[##Pending!##]**
  	* Q5: Higher Level Representations: Image Features (10 points) **[##Pending!##]**
+<<<<<<< HEAD
   * Q6: Cool Bonus: Do something extra! (+10 points) **[##Pending!##]**
+=======
+>>>>>>> 3dd241ecaca6bacd7371d2e470876d16a6ce37ce
  * Assignment #2
  	* Q1: Fully-connected Neural Network (30 points) **[##Pending!##]**
  	* Q2: Batch Normalization (30 points) **[##Pending!##]**
