@@ -16,7 +16,7 @@ The completed assignments are marked as **[##Done!##]**, otherwise they are as o
 Assignment list:
 
 * Assignment 1:
- 	* Q1: k-Nearest Neighbor classifier (20 points) **[##Pending!##]**#
+ 	* Q1: k-Nearest Neighbor classifier (20 points) **[##Pending!##]**
  	* Q2: Training a Support Vector Machine (25 points) **[##Pending!##]**
  	* Q3: Implement a Softmax classifier (20 points) **[##Pending!##]**
  	* Q4: Two-Layer Neural Network (25 points) **[##Pending!##]**
