@@ -3,6 +3,7 @@
 During my studies I prepared a set of Jupyter Notebooks with some of theories and codes explaining many concepts of Neural Networks and Deep Learning. Besides those materials, I have also added some implementations of papers of the area. You can find them below as a reference for your studies.
 
 ## Table of Contents
+* [My Presentations](#my-presentations)
 * [Linear Regression](#linear-regression)
 * [Logistic Regression](#logistic-regression)
 * [Polynomial Regression](#polynomial-regression)
@@ -14,7 +15,11 @@ During my studies I prepared a set of Jupyter Notebooks with some of theories an
 * [Residual Neural Networks](#residual-neural-networks)
 * **Supporting Materials:**
   * **[Video Lectures](#video-lectures)**  
-  * **[Books](#books)**  
+  * **[Books](#books)** 
+
+### My Presentations
+* VII Workshop on Information Systems (https://github.com/rafaelpadilla/Deep-Learning-Topics/blob/master/materials/Apresenta%C3%A7%C3%A3o%20Deep%20Learning.pdf) [October 20th 2017]: In this 2-hour-long lecture, I show a the evolution of Neural Nets, passing by gradient descents, backpropagation, how to apply convolutions on images, Convolutional Neural Networks (CNN) famous topologies and some real-world applications. Its content is an overview of the world of Deep Learning that could help you understand a few basic things and motivate you to reach further topics. This presentation can be downloaded [here] (https://github.com/rafaelpadilla/Deep-Learning-Topics/raw/master/materials/Apresenta%C3%A7%C3%A3o%20Deep%20Learning.pdf).
+  
 
 ### Linear Regression
 * Concepts and Theory
@@ -39,3 +44,4 @@ During my studies I prepared a set of Jupyter Notebooks with some of theories an
 
 ### Books
 1.  [Learning from Data](https://www.amazon.com/gp/product/1600490069): One of the most popular books on Machine Learning. It gives  clear explanations mixing theory and practical contents that can help you understang fundamentals of ML like VC dimension, regularization, overfitting and linear models.
+
