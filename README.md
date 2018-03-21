@@ -13,6 +13,9 @@ During my studies I prepared a set of Jupyter Notebooks with some of theories an
 * [Regularization](#regularization)
 * [Convolutional Neural Networks](#convolutiona-neural-networks)
 * [Residual Neural Networks](#residual-neural-networks)
+* Practical examples
+  * Image Classification
+    * Food Classification
 * **Supporting Materials:**
   * **[Video Lectures](#video-lectures)**  
   * **[Books](#books)** 
