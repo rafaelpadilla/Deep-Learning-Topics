@@ -1,27 +1,56 @@
 import os
-import urllib.request
+import tarfile
+import zipfile
+from six.moves import urllib
 
-def Download_file(url, dir_destination=None, file_name=None, quiet=False):
+def fetch_dataset(url, destination_folder, decompress=False, del_file_afterwards=False, quiet=False):
+    if not os.path.isdir(destination_folder):
+        os.makedirs(destination_folder)
+    file_name = url[url.rfind('/')+1:]
+    destination_file = os.path.join(destination_folder, file_name)
+    if not quiet:
+        print(f'Downloading file from {url}')
+    try:
+        urllib.request.urlretrieve(url, destination_file)
+        if not quiet:
+            print(f'File successfully downloaded from {url}')
+    except:
+        print(f'Error downloading file from {url}')
+        return False, ''
+    if not decompress:
+        return True, ''
+    ending_folder = ''
+    if file_name.endswith('.tar') or file_name.endswith('.tar.gz') or file_name.endswith('.tgz'):
+        ending_folder = destination_file.replace('.tar','/').replace('.tar.gz','/'),replace('.tgz','/')
+        if not quiet:
+            print(f'Decompressing {file_name} with tarfile into {ending_folder}.')
+        tgz_file = tarfile.open(destination_file)
+        tgz_file.extractall(path=destination_folder)
+        tgz_file.close()
+    elif file_name.endswith('.zip'):
+        ending_folder = destination_file.replace('.zip','/')
+        if not quiet:
+            print(f'Decompressing {file_name} with zipfile into {ending_folder}')
+        zip_file = zipfile.ZipFile(destination_file)
+        zip_file.extractall(destination_folder)
+        zip_file.close()
+    else:
+        if not quiet:
+            print('Correct decompression tool not found.') 
+        if del_file_afterwards:
+            a = os.remove(destination_file) 
+        if not quiet and a:
+            print(f'File {file_name} deleted sucessfully.') 
+        return False, ending_folder
     
-    if file_name == None:
-        file_name = url[url.rfind('/')+1:]
-    # If directory does not exist, create it
-    if not os.path.exists(dir_destination):
-        os.makedirs(dir_destination)
-    # Set path of the file
-    full_path_file = os.path.join(dir_destination,file_name)
-    if quiet == False:
-        print('Trying to reach %s' % url)
-    response = urllib.request.urlopen(url)
-    # Read as bytes data into memory
-    data = response.read()
-    with open(full_path_file, 'wb') as out_file:
-        a = out_file.write(data)
+    if del_file_afterwards:
+        try:
+            os.remove(destination_file)
+            if not quiet:
+                print(f'File {file_name} deleted sucessfully.') 
+        except:
+            print(f'Error deleting {file_name}.') 
+    return True, ending_folder
 
-current_dir = os.path.dirname(os.path.realpath(__file__))
-
-url = 'https://download.pytorch.org/tutorial/hymenoptera_data.zip'
-dir_to_save = os.path.join(current_dir,'../datasets')
-Download_file(url, dir_to_save, 'hymenoptera_data.zip')
 
 
