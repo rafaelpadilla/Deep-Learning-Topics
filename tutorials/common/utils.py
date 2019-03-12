@@ -3,6 +3,7 @@ import tarfile
 import zipfile
 from six.moves import urllib
 
+
 def fetch_dataset(url, destination_folder, decompress=False, del_file_afterwards=False, quiet=False):
     if not os.path.isdir(destination_folder):
         os.makedirs(destination_folder)
