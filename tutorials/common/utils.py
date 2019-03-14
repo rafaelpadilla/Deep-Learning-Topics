@@ -22,7 +22,7 @@ def fetch_dataset(url, destination_folder, decompress=False, del_file_afterwards
         return True, ''
     ending_folder = ''
     if file_name.endswith('.tar') or file_name.endswith('.tar.gz') or file_name.endswith('.tgz'):
-        ending_folder = destination_file.replace('.tar','/').replace('.tar.gz','/'),replace('.tgz','/')
+        ending_folder = destination_file.replace('.tar.gz','/').replace('.tar','/').replace('.tgz','/')
         if not quiet:
             print(f'Decompressing {file_name} with tarfile into {ending_folder}.')
         tgz_file = tarfile.open(destination_file)
