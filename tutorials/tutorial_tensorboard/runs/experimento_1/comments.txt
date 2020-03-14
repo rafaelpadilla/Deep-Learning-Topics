@@ -1,0 +1,11 @@
+
+main_dir_results: ./runs
+name_experiment: experimento_1
+created_on: 2020-03-12 15:39:28
+host: notesmt
+comments: Objetivo: testar o funcionamento do tensorboard.
+parameters:
+	batch_size: [10, 25, 50, 75, 100]
+	lr: [0.01, 0.001]
+	momentum: [0.75, 0.9]
+	total_epochs: [10]

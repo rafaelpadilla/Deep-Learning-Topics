@@ -1,0 +1,25 @@
+                      ====================================================================================================
+(2020-03-12 16:26:08) Attempt to run experiment experimento_1 with parameters: 
+			Run(batch_size=50, lr=0.01, momentum=0.75, total_epochs=10)
+(2020-03-12 16:26:08) Experiment started:
+(2020-03-12 16:26:24) mini-batch: 999 training_loss: 0.9031757543683052
+(2020-03-12 16:26:29) epoch: 0 	 total_corect: 40671 (67.78%) 	 loss: 1007.6318572163582
+(2020-03-12 16:26:45) mini-batch: 2199 training_loss: 0.5573863476216793
+(2020-03-12 16:26:51) epoch: 1 	 total_corect: 50134 (83.56%) 	 loss: 534.3966356664896
+(2020-03-12 16:27:07) mini-batch: 3399 training_loss: 0.4612355163246393
+(2020-03-12 16:27:12) epoch: 2 	 total_corect: 51744 (86.24%) 	 loss: 453.70657071471214
+(2020-03-12 16:27:28) mini-batch: 4599 training_loss: 0.4164958111792803
+(2020-03-12 16:27:33) epoch: 3 	 total_corect: 52428 (87.38%) 	 loss: 408.82891131937504
+(2020-03-12 16:27:49) mini-batch: 5799 training_loss: 0.3857200608626008
+(2020-03-12 16:27:54) epoch: 4 	 total_corect: 53004 (88.34%) 	 loss: 381.25703682750463
+(2020-03-12 16:28:10) mini-batch: 6999 training_loss: 0.3647713300138712
+(2020-03-12 16:28:15) epoch: 5 	 total_corect: 53273 (88.79%) 	 loss: 362.33648231625557
+(2020-03-12 16:28:31) mini-batch: 8199 training_loss: 0.3491550726145506
+(2020-03-12 16:28:36) epoch: 6 	 total_corect: 53664 (89.44%) 	 loss: 344.30293760448694
+(2020-03-12 16:28:53) mini-batch: 9399 training_loss: 0.32798523027449844
+(2020-03-12 16:28:58) epoch: 7 	 total_corect: 53862 (89.77%) 	 loss: 330.0960747599602
+(2020-03-12 16:29:14) mini-batch: 10599 training_loss: 0.32049208152666686
+(2020-03-12 16:29:19) epoch: 8 	 total_corect: 54085 (90.14%) 	 loss: 317.9234881512821
+(2020-03-12 16:29:35) mini-batch: 11799 training_loss: 0.30994925712794064
+(2020-03-12 16:29:40) epoch: 9 	 total_corect: 54300 (90.50%) 	 loss: 306.4945190027356
+(2020-03-12 16:29:40) Finished training with given parameters.

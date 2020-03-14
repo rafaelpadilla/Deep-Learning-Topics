@@ -1,0 +1,15 @@
+                      ====================================================================================================
+(2020-03-12 16:48:47) Attempt to run experiment experimento_1 with parameters: 
+			Run(batch_size=75, lr=0.001, momentum=0.9, total_epochs=10)
+(2020-03-12 16:48:47) Experiment started:
+(2020-03-12 16:49:05) epoch: 0 	 total_corect: 23530 (39.22%) 	 loss: 1379.9367604851723
+(2020-03-12 16:49:22) epoch: 1 	 total_corect: 43491 (72.48%) 	 loss: 585.4546498060226
+(2020-03-12 16:49:39) epoch: 2 	 total_corect: 45564 (75.94%) 	 loss: 508.96623134613037
+(2020-03-12 16:49:57) epoch: 3 	 total_corect: 47061 (78.44%) 	 loss: 459.9619885087013
+(2020-03-12 16:50:14) epoch: 4 	 total_corect: 48164 (80.27%) 	 loss: 422.9364106208086
+(2020-03-12 16:50:32) epoch: 5 	 total_corect: 49042 (81.74%) 	 loss: 392.5209154188633
+(2020-03-12 16:50:49) epoch: 6 	 total_corect: 49791 (82.98%) 	 loss: 369.73920364677906
+(2020-03-12 16:51:07) epoch: 7 	 total_corect: 50246 (83.74%) 	 loss: 353.58609004318714
+(2020-03-12 16:51:24) epoch: 8 	 total_corect: 50803 (84.67%) 	 loss: 335.83738484978676
+(2020-03-12 16:51:41) epoch: 9 	 total_corect: 51192 (85.32%) 	 loss: 321.93948313593864
+(2020-03-12 16:51:41) Finished training with given parameters.
