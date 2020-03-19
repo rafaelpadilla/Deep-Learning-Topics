@@ -62,13 +62,16 @@ def prepare_tensorboard_dir(experiment_details):
 def matplotlib_imshow(img, transf_std, transf_mean, one_channel=False):
     if one_channel:
         img = img.mean(dim=0)
+        transf_std = [transf_std]
+        transf_mean = [transf_mean]
     # unnormalize
-    img = img * transf_std + transf_mean
+    img = (img * torch.FloatTensor(transf_std).unsqueeze(1).unsqueeze(1)
+           ) + torch.FloatTensor(transf_mean).unsqueeze(1).unsqueeze(1)
     npimg = img.numpy()
     if one_channel:
-        plt.imshow(npimg, cmap='Greys')
+        plt.imshow(npimg[0], cmap='Greys')
     else:
-        plt.imshow(np.transpose(np.img), (1, 2, 0))
+        plt.imshow(np.transpose(npimg, (1, 2, 0)))
 
 
 # Before training the model, lets define some helper functions
