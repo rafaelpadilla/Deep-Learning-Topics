@@ -61,7 +61,6 @@ def prepare_tensorboard_dir(experiment_details):
 
 def matplotlib_imshow(img, transf_std, transf_mean, one_channel=False):
     if one_channel:
-        img = img.mean(dim=0)
         transf_std = [transf_std]
         transf_mean = [transf_mean]
     # unnormalize
