@@ -99,7 +99,9 @@ for run in runs:
     data_iter = iter(train_loader)
     images, labels = data_iter.next()
     # Create grid of images
-    img_grid = torchvision.utils.make_grid(images)
+    img_grid = torchvision.utils.make_grid(images, nrow=5)
+    utils_tb.matplotlib_imshow(img_grid, transf_std, transf_mean, one_channel=True)
+
     # Show images
     # plt.show()
     # write to tensorboard
