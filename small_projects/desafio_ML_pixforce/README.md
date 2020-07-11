@@ -7,12 +7,12 @@ In order to replicate the experiments, follow the steps below:
 2) Manuall add the following files containing the samples in the folder `desafio_ML_pixforce/data/`:  
    _1_win50_trainX.npy_  
    _1_win50_trainY.npy_  
-   _2_win50_trainY.npy_  
    _2_win50_trainX.npy_  
-   _4_win50_trainX.npy_  
-   _4_win50_trainY.npy_  
+   _2_win50_trainY.npy_  
    _3_win50_trainX.npy_  
    _3_win50_trainY.npy_  
+   _4_win50_trainX.npy_  
+   _4_win50_trainY.npy_  
    _5_win50_trainX.npy_  
    _5_win50_trainY.npy_  
    _6_win50_trainX.npy_  
