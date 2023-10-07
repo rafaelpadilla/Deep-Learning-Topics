@@ -10,7 +10,7 @@ backports.ssl-match-hostname==3.5.0.1
 certifi==2023.7.22
 cycler==0.10.0
 decorator==4.0.6
-future==0.16.0
+future==0.18.3
 gnureadline==6.3.3
 ipykernel==4.2.2
 ipython==8.10.0
